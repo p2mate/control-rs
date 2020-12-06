@@ -1,12 +1,27 @@
 [package]
 name = "control-dsc"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["p2"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+build = "build.rs"
+
+[build-dependencies]
+capnpc = "0.13"
 
 [dependencies]
 serialport = "3.3"
 clap = "2.33"
 itertools = "0.9"
+capnp = { version = "0.13" }
+capnp-rpc = "0.13"
+futures = "0.3.0"
+tokio = { version = "0.3.0", features = ["full"]}
+tokio-util = { version = "0.4.0", features = ["compat"] }
+anyhow = "1.0"
+daemonize = "0.4"
+pipefile = "0.1"
+flexi_logger = { version = "0.16", features = ["syslog_writer"] }
+log = "0.4"
+nix = "0.19"
