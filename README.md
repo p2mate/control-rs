@@ -3,6 +3,7 @@ Control Extron scalers/switchers.
 So far only tested with DSC-301-HD and IN1604 HD. It should probably also
 work with the DTP versions.
 
+```
 USAGE:
     control-dsc <SUBCOMMAND>
 
@@ -17,3 +18,4 @@ SUBCOMMANDS:
     select         select input
     server         run as server
     stop_server    halt server
+```
